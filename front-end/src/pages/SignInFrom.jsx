@@ -59,7 +59,7 @@ const SignInForm = () => {
         <form onSubmit={handleSubmit}>
           <label>
             Email or Username:
-            <input
+            <input className='border rounded ml-4'
               type="text"
               name="identifier"
               value={formData.identifier}
@@ -69,7 +69,7 @@ const SignInForm = () => {
           <br />
           <label>
             Password:
-            <input
+            <input className='border rounded ml-4'
               type="password"
               name="password"
               value={formData.password}
@@ -80,6 +80,11 @@ const SignInForm = () => {
           <button type="submit" disabled={loading}>
             {loading ? 'Logging in...' : 'Log In'}
           </button>
+          <p>Forgot password? Click<Link to={'/fogot-password'} className="text-blue-500 text-small-semibold ml-1">Here</Link></p>
+          <p className="text-small-regular text-light-2 text-center mt-2">
+            Don't have an account?
+            <Link to='/sign-up' className="text-blue-500 text-small-semibold ml-1">Sign up</Link>
+          </p>
         </form>
       </div>
     </>

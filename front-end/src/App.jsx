@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import SignInFrom from './pages/SignInFrom';
 import SignUpFrom from './pages/SignUpFrom';
+import ForgotPasswordForm from './pages/ForgotPasswordForm';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='sign-in' element={<SignInFrom />} />
           <Route path='sign-up' element={<SignUpFrom />} />
+          <Route path='fogot-password' element={<ForgotPasswordForm />} />
         </Routes>
       </Router>
     </>
